@@ -1,0 +1,36 @@
+body , html {
+	background-color: #FFFDDF;
+	color: #000000;
+	font-family: Arial, sans-serif;
+}
+
+section {
+	text-align: center;
+}
+
+#games {
+	background: white;
+	border: #999 1px solid;
+	width: auto;
+	max-width: 900px;
+	padding: 24px;
+	margin: 0px auto;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: center;
+}
+
+#games img {
+	background-size: cover;
+	border-radius: 5px;
+	width: 150px;
+	height: 150px;
+	margin: 10px;
+	cursor: pointer;
+	transition: 400ms ease;
+}
+
+#games img:hover {
+	opacity: 0.3;
+}
