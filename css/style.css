@@ -8,13 +8,28 @@ section {
 	text-align: center;
 }
 
-#games {
-	background: white;
-	border: #999 1px solid;
+section span {
+	color: red;
+}
+
+section div#alert {
+	background-color: #FF6B6B;
+	color: white;
 	width: auto;
-	max-width: 900px;
-	padding: 24px;
-	margin: 0px auto;
+	max-width: 600px;
+	border-radius: 5px;
+	padding: 10px;
+	margin: auto;
+	font-size: 14pt;
+	font-weight: bold;
+	visibility: hidden;
+}
+
+#games {
+	background: transparent;
+	width: auto;
+	max-width: 1200px;
+	margin: auto;
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;
@@ -28,9 +43,26 @@ section {
 	height: 150px;
 	margin: 10px;
 	cursor: pointer;
-	transition: 400ms ease;
+	transition: 300ms ease;
 }
 
 #games img:hover {
-	opacity: 0.3;
+	filter: hue-rotate(-50deg) saturate(200%);
+}
+
+#games .restart {
+	background-color:#44c767;
+	border:1px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	font-weight:bold;
+	padding:10px 10px;
+	text-decoration:none;
+}
+
+#games .restart:hover {
+	background-color:#5cbf2a;
 }
