@@ -1,0 +1,86 @@
+body , html {
+	background-color: #FFFDDF;
+	color: #000000;
+	font-family: Arial, sans-serif;
+}
+
+section {
+	text-align: center;
+}
+
+section span {
+	color: red;
+}
+
+section div#alert {
+	background-color: #FF6B6B;
+	color: white;
+	width: auto;
+	max-width: 600px;
+	border-radius: 5px;
+	padding: 10px;
+	margin: auto;
+	font-size: 14pt;
+	font-weight: bold;
+	visibility: hidden;
+}
+
+#games {
+	background: transparent;
+	width: auto;
+	max-width: 1200px;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: center;
+}
+
+
+#games form {
+	font-weight: bold;
+}
+
+#games form input {
+	background-color: white;
+	border: 1px solid #EBEBEB;
+	padding: 5px;
+	width: 150px;
+	font-size: 16px;
+	color: #BABABA;
+}
+
+#games form input:focus {
+	outline: 0;
+}
+
+#games img {
+	background-size: cover;
+	border-radius: 5px;
+	width: 150px;
+	height: 150px;
+	margin: 10px;
+	cursor: pointer;
+	transition: 300ms ease;
+}
+
+#games img:hover {
+	filter: hue-rotate(-50deg) saturate(200%);
+}
+
+#games .restart {
+	background-color:#44c767;
+	border:1px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	font-weight:bold;
+	padding:10px 10px;
+	text-decoration:none;
+}
+
+#games .restart:hover {
+	background-color:#5cbf2a;
+}
